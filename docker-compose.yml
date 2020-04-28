@@ -8,3 +8,8 @@ services:
       - ./notebooks:/app/notebooks
     ports:
       - "8888:8888"
+  indi-server:
+    build: .
+    command: indiserver -v indi_simulator_ccd indi_simulator_telescope indi_simulator_gps
+    ports:
+      - "7624:7624"

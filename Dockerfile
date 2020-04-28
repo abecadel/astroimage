@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y software-properties-common apt-utils
 RUN apt-add-repository ppa:mutlaqja/ppa -y
 RUN apt update
-RUN apt install -y indi-full gsc python3 python3-pip astrometry.net 
+RUN apt install -y indi-full libindi-dev gsc python3 python3-pip python3-dev astrometry.net swig libcfitsio-dev libnova-dev 
 
 # Install Python packages
 COPY requirements.txt .
