@@ -6,5 +6,5 @@ opencv-python
 pillow
 astropy
 scikit-image
-pyindi-client
+git+git://github.com/geehalel/pyindi-client
 
